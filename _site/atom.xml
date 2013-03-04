@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Jekyll Bootstrap</title>
+ <title>Kamalika's Blogsite</title>
  <link href="http://username.github.com/" rel="self"/>
  <link href="http://username.github.com"/>
- <updated>2013-03-04T15:18:08+05:30</updated>
+ <updated>2013-03-04T15:57:18+05:30</updated>
  <id>http://username.github.com</id>
  <author>
-   <name>Name Lastname</name>
-   <email>blah@email.test</email>
+   <name>Kamalika Majumder</name>
+   <email>kamalika.mj@gmail.com</email>
  </author>
 
  
