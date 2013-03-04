@@ -4,13 +4,21 @@
  <title>Kamalika's Blogsite</title>
  <link href="http://username.github.com/" rel="self"/>
  <link href="http://username.github.com"/>
- <updated>2013-03-04T16:57:21+05:30</updated>
+ <updated>2013-03-04T17:05:19+05:30</updated>
  <id>http://username.github.com</id>
  <author>
    <name>Kamalika Majumder</name>
    <email>kamalika.mj@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>The site is up</title>
+   <link href="http://username.github.com/2013/03/04/the-site-is-up"/>
+   <updated>2013-03-04T00:00:00+05:30</updated>
+   <id>http://username.github.com/2013/03/04/the-site-is-up</id>
+   <content type="html"></content>
+ </entry>
  
  <entry>
    <title>Hello World</title>

@@ -5,10 +5,18 @@
         <description>Kamalika's Blogsite - Kamalika Majumder</description>
         <link>http://username.github.com</link>
         <link>http://username.github.com</link>
-        <lastBuildDate>2013-03-04T16:57:21+05:30</lastBuildDate>
-        <pubDate>2013-03-04T16:57:21+05:30</pubDate>
+        <lastBuildDate>2013-03-04T17:05:19+05:30</lastBuildDate>
+        <pubDate>2013-03-04T17:05:19+05:30</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>The site is up</title>
+                <description></description>
+                <link>http://username.github.com/2013/03/04/the-site-is-up</link>
+                <guid>http://username.github.com/2013/03/04/the-site-is-up</guid>
+                <pubDate>2013-03-04T00:00:00+05:30</pubDate>
+        </item>
 
         <item>
                 <title>Hello World</title>
