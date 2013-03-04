@@ -6,7 +6,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
 safe: true
-source: ../_pages/
+source: .
+destination: ./_site
 lsi: false
 
 # Themes are encouraged to use these universal variables 
