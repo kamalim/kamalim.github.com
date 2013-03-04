@@ -1,46 +1,31 @@
 ---
 layout: page
 title: Hello World!
-tagline: Supporting tagline
+tagline: 
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
     
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+Prerequisites in local laptop:
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+●	Install Vagrant : http://downloads.vagrantup.com/
+●	Install Oracle Virtual Box : https://www.virtualbox.org/wiki/Downloads
+●	Install chef-client : http://wiki.opscode.com/display/chef/Installation
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+Steps to setup Dev environment:
 
-    $ rm -rf _posts/core-samples
+1.Clone the chef repo:
+git clone git@<your chef-repo>  
+2.Copy  Vagrant box from location below:
+git@github.com:kamalim/Vagrant.git
 
-Here's a sample "posts list".
+3.Adding the vagrant box:
+$cd Vagrant
+$vagrant box add centos-chef centos_with_chef.box
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+3. Create vagrant project:
+$mkdir -p ~/dev
+$cd ~/dev
+$vagrant init 
 
 
