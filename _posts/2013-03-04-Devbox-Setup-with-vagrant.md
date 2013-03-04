@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "2013 03 04 Devbox Setup With Vagrant"
+title: "Devbox Setup With Vagrant"
 description: ""
 ---
 {% include JB/setup %}
