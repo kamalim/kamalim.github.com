@@ -1,18 +1,18 @@
 ---
 layout: page
-title: How to setup dev box using Vagrant!
+title: Setup local dev box using vagrant
 tagline: Vagrantguide
 ---
 {% include JB/setup %}
 
     
-#Prerequisites in local laptop:
+## Prerequisites in local laptop:
 
-  Install Vagrant : (http://downloads.vagrantup.com/)
-  Install Oracle Virtual Box : (https://www.virtualbox.org/wiki/Downloads)
-  Install chef-client : (http://wiki.opscode.com/display/chef/Installation)
+  1.Install Vagrant : (http://downloads.vagrantup.com/)
+  2.Install Oracle Virtual Box : (https://www.virtualbox.org/wiki/Downloads)
+  3.Install chef-client : (http://wiki.opscode.com/display/chef/Installation)
 
-#Steps to setup Dev environment:
+## Steps to setup Dev environment:
 
   1.Clone the chef repo:
 
