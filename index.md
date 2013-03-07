@@ -42,8 +42,8 @@ tagline: Vagrantguide
     $vagrant init 
 
 
-##   The above command creates a Vagrantfile in “dkit-dev” directory add the below configs in the Vagrantfile.
-##   This Vagrantfile config is for creating one vm.If you want to create multiple vms please refer #to the sample Vangrantfile uploaded in Devops Drive
+The above command creates a Vagrantfile in “dkit-dev” directory add the below configs in the Vagrantfile.
+This Vagrantfile config is for creating one vm.If you want to create multiple vms please refer #to the sample Vangrantfile uploaded in Devops Drive
 
 
 
@@ -65,7 +65,8 @@ tagline: Vagrantguide
     end
 
 
-##  Once the above configs are added, save and close the vagrantfile and run vagrant up.This ##will create a vm with the respective role mentioned in the config.
+Once the above configs are added, save and close the vagrantfile and run vagrant up.
+This will create a vm with the respective role mentioned in the config.
 
 
     $vagrant up
