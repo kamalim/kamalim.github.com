@@ -18,7 +18,7 @@ tagline: Vagrantguide
 
   3.Install chef-client 
 
-    (http://wiki.opscode.com/display/chef/Installation)
+    http://wiki.opscode.com/display/chef/Installation
 
 ## Steps to setup Dev environment:
 
