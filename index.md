@@ -24,11 +24,11 @@ tagline: Vagrantguide
 
   1.Clone the chef repo:
 
-    git clone git@chef-repo.git  
+    git clone git@your-chef-repo.git  
 
   2.Copy  Vagrant box from location below:
 
-    git@github.com:kamalim/Vagrant.git
+    git clone git@github.com:kamalim/Vagrant.git
 
   3.Adding the vagrant box:
 
