@@ -15,7 +15,7 @@ Prerequisites in local laptop:
 Steps to setup Dev environment:
 
 1.Clone the chef repo:
-git clone git@<your chef-repo>  
+git clone git@your/chef-repo.git  
 2.Copy  Vagrant box from location below:
 git@github.com:kamalim/Vagrant.git
 
