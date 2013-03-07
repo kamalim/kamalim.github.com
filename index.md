@@ -10,15 +10,15 @@ tagline: Vagrantguide
 
   1.Install Vagrant 
 
-  (http://downloads.vagrantup.com/)
+    http://downloads.vagrantup.com/
 
   2.Install Oracle Virtual Box 
 
-  (https://www.virtualbox.org/wiki/Downloads)
+    https://www.virtualbox.org/wiki/Downloads
 
   3.Install chef-client 
 
-  (http://wiki.opscode.com/display/chef/Installation)
+    (http://wiki.opscode.com/display/chef/Installation)
 
 ## Steps to setup Dev environment:
 
