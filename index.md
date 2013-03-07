@@ -42,3 +42,35 @@ tagline: Vagrantguide
     $vagrant init 
 
 
+# The above command creates a Vagrantfile in “dkit-dev” directory
+#add the below configs in the Vagrantfile.
+#This Vagrantfile config is for creating one vm.If you want to create multiple vms please refer #to the sample Vangrantfile #uploaded in Devops Drive
+
+
+
+  Vagrant::Config.run do |config|
+ 
+    config.vm.define :dkitdev do |dkitdev_config|
+       dkitdev_config.vm.box = "centos-chef"
+       dkitdev_config.vm.boot_mode = :gui
+       dkitdev_config.ssh.private_key_path = '/path to/ vagrant folder/ copied in step 1/id_rsa'
+       dkitdev_config.vm.network :bridged, :bridge => "<respective ethernet port on laptop>"   e.g : "en3: USB Ethernet 2"
+       dkitdev_config.vm.host_name = "dkit-dev"
+    end
+    config.vm.provision :chef_solo do |chef|
+        chef.cookbooks_path = "..<path to the chef-repo clone>/cookbooks"
+        chef.roles_path = "..<path to the chef-repo clone>/roles"
+        chef.add_role "indexserver”
+        chef.add_role "access_controller"
+        chef.add_role "readerprod"
+    end
+
+
+#once the above configs are added, save and close the vagrantfile and run vagrant up.This ##will create a vm with the respective #role mentioned in the config.
+
+
+    $vagrant up
+
+  5.Once the vagrant vm is ready, the application can be deployed in the VM.
+
+
