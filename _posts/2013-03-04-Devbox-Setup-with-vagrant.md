@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Devbox Setup With Vagrant"
 description: "" 
 comments: true
