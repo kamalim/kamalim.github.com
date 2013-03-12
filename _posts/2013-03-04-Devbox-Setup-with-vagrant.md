@@ -2,6 +2,7 @@
 layout: page
 title: "Devbox Setup With Vagrant"
 description: "" 
+comments: 
 ---
 {% include JB/setup %}
 
