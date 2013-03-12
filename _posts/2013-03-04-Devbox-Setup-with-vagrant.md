@@ -3,8 +3,8 @@ layout: post
 title: "Devbox Setup With Vagrant"
 description: "" 
 comments: true
-catagories: Posts
-tags: [vagrant]
+catagories: 
+tags: []
 ---
 {% include JB/setup %}
 
