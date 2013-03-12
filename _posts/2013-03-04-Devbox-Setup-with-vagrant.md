@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 title: "Devbox Setup With Vagrant"
 description: ""
+category: 
+tags: []
 ---
 {% include JB/setup %}
 
