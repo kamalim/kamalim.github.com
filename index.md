@@ -30,7 +30,8 @@ Started my carrier as a System/Network Specialist and moved on to Infrastructure
 ### Contact Me 
 
 email: kamalika.mj@gmail.com
-Twitter : <a href='https://twitter.com/mjkamalika' class='twitter-follow-button' data-show-count='false'>Follow @mjkamalika</a>
+Twitter : https://twitter.com/mjkamalika
+LinkedIn: http://in.linkedin.com/in/kamalika-majumder
 
 
 
