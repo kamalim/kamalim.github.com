@@ -9,9 +9,9 @@ This blogpost will include the steps that I used to create a ubuntu and a window
 
   So let us start with linux (Ubuntu 12.10 64 bit) base box creation:
 
-   1.Create new machine in Virtual box .
+   1.Create new machine in Virtual box.
 
-   2.Keep the networking type as nat
+   2.Keep the networking type as nat.
 
    5.Install Ubuntu 12.10 on it.The ISO can be found here http://www.ubuntu.com/download. 
 
