@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Setup local dev box using vagrant
-tagline: Vagrantguide
+title: Home
+header : Post Archive
+group: navigation
 ---
 {% include JB/setup %}
 
