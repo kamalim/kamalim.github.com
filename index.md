@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title : Home
 header : Post Archive
 group: navigation
 ---
@@ -8,4 +8,3 @@ group: navigation
 
 {% assign posts_collate = site.posts %}
 {% include JB/posts_collate %}
-
