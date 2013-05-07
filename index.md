@@ -5,13 +5,13 @@ group: navigation
 ---
 {% include JB/setup %}
 
-## About Me:
+### About Me:
 
 I am an Infrastructure Automation Specialist,a senior Devops Consultant with Thoughtworks.
 
 Started my carrier as a System/Network Specialist and moved on to Infrastructure Automation using various automation tools across public and private clouds , also interested in Infrastructure and Application Security, IaaS, PaaS and Continuous delivery.
 
-## My recent Blogs:
+### My recent Blogs:
 
 <ul>
   {% for post in site.posts %}
@@ -21,7 +21,7 @@ Started my carrier as a System/Network Specialist and moved on to Infrastructure
   {% endfor %}
 </ul>
 
-## My Presentations:
+### My Presentations:
 
 <ul>
   <a href="http://www.slideshare.net/kamalikamj/identity-management-15171366">Identity Management in 802.1x networks</a>
