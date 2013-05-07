@@ -33,7 +33,7 @@ Started my carrier as a System/Network Specialist and moved on to Infrastructure
 
   Twitter : https://twitter.com/mjkamalika
   
-  LinkedIn: http://in.linkedin.com/in/kamalika-majumder
+  LinkedIn: http://in.linkedin.com/in/kamalikamajumder
 
 
 
