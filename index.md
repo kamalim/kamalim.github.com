@@ -7,13 +7,15 @@ group: navigation
 
 ### About Me
 
-I am an Infrastructure Automation Specialist and a senior Devops Consultant with Thoughtworks.
+<ul>
+  I am an Infrastructure Automation Specialist and a senior Devops Consultant with Thoughtworks.
 
-Started my carrier as a System/Network Administrator and moved on to Infrastructure Automation across private and public clouds (AWS, Openstack, Cloudstack).
+  Started my carrier as a System/Network Administrator and moved on to Infrastructure Automation across private and public clouds (AWS, Openstack, Cloudstack).
 
-Interested in Infrastructure and Application Security, IaaS, PaaS and Continuous delivery.
+  Interested in Infrastructure and Application Security, IaaS, PaaS and Continuous delivery.
+</ul>
 
-### My recent Blogs
+### My Blogs
 
 <ul>
   {% for post in site.posts %}
@@ -32,7 +34,8 @@ Interested in Infrastructure and Application Security, IaaS, PaaS and Continuous
 </ul>
 
 ### Contact Me 
-  email: kamalika.mj@gmail.com
+  
+  1.email: kamalika.mj@gmail.com
 
   twitter: <a href="https://twitter.com/mjkamalika">https://twitter.com/mjkamalika</a>
   
