@@ -34,7 +34,7 @@ group: navigation
 
 ### Contact Me 
   
-  1.email: kamalika.mj@gmail.com
+  email: kamalika.mj@gmail.com
 
   twitter: <a href="https://twitter.com/mjkamalika">https://twitter.com/mjkamalika</a>
   
