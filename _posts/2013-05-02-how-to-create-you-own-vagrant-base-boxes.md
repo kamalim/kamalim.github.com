@@ -38,6 +38,16 @@ This blogpost will include the steps that I used to create a ubuntu and a window
 
   7.Install Virtual Box Guest Additions <a href="http://www.virtualbox.org/manual/ch04.html#idp12039536">http://www.virtualbox.org/manual/ch04.html#idp12039536</a>
 
+  8.Once the above steps are complete proceed with packaging the box as below,
+
+    $mkdir vagrant_repo
+    $cd vagrant_repo
+    $vagrant init ## This will create a Vagrantfile which will serve as the default vagrantfile.
+
+    ##copy the id_rsa into the vagrant_repo directory
+    
+    $vagrant package --base <name of the virtual box vm> --output ubuntu.box --Vagrantfile Vagrantfile --include id_rsa
+
 
 
 
