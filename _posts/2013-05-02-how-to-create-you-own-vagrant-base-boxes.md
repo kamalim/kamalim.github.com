@@ -27,7 +27,14 @@ tags: "Vagrantguide"
    6.Edit the sudoers file as below:
 
      $visudo
-     ##comment out the line with !requiretty.
+     ##comment out the line below:
+     Defaults requiretty
+     
+     ## Add the below lines:
+
+     $vagrant ALL=(ALL:ALL) ALL
+     $vagrant ALL=NOPASSWD: ALL
+
 
    7.Install Virtual Box Guest Additions <a href="http://www.virtualbox.org/manual/ch04.html#idp12039536">http://www.virtualbox.org/manual/ch04.html#idp12039536</a>
 
