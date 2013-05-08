@@ -34,7 +34,7 @@ Interested in Infrastructure and Application Security, IaaS, PaaS and Continuous
 ### Contact Me 
   email: kamalika.mj@gmail.com
 
-  twitter: https://twitter.com/mjkamalika
+  twitter: <a href="https://twitter.com/mjkamalika">https://twitter.com/mjkamalika</a>
   
   LinkedIn: <a href="http://in.linkedin.com/in/kamalikamajumder">http://in.linkedin.com/in/kamalikamajumder</a>
 
