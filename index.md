@@ -4,6 +4,7 @@ title: Home
 group: navigation
 ---
 {% include JB/setup %}
+{% include themes/twitter/default,html %}
 
 ### About Me
 
