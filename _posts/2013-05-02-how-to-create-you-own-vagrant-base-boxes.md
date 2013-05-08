@@ -45,8 +45,30 @@ This blogpost will include the steps that I used to create a ubuntu and a window
     $vagrant init ## This will create a Vagrantfile which will serve as the default vagrantfile.
 
     ##copy the id_rsa into the vagrant_repo directory
-    
+
     $vagrant package --base <name of the virtual box vm> --output ubuntu.box --Vagrantfile Vagrantfile --include id_rsa
+
+   9.This will create a vagrant base box ubuntu.box in the vagrant_repo directory.
+
+   10.Add the Vagrant box to your project:
+
+     $mkdir my_project
+     $cd my_project
+     $vagrant box add ubuntu ~/vagrant_repo/ubuntu.box
+     $vagrant init
+
+     ##Add the below lines in your Vagrantfile
+
+     config.vm.define :vm1 do |vm1_config|
+       vm1_config.vm.box = "ubuntu"
+
+     $vagrant up
+
+   Thus the ubuntu base box is created and added to a project.
+
+   
+
+
 
 
 
