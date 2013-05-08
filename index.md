@@ -9,7 +9,9 @@ group: navigation
 
 I am an Infrastructure Automation Specialist,a senior Devops Consultant with Thoughtworks.
 
-Started my carrier as a System/Network Specialist and moved on to Infrastructure Automation using various automation tools across public and private clouds , also interested in Infrastructure and Application Security, IaaS, PaaS and Continuous delivery.
+Started my carrier as a System/Network Specialist and moved on to Infrastructure Automation using various automation tools across private and public clouds (AWS, Openstack, Cloudstack).
+
+Interested in Infrastructure and Application Security, IaaS, PaaS and Continuous delivery.
 
 ### My recent Blogs
 
