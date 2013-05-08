@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to create you own vagrant base boxes"
+tags: "Vagrantguide"
 ---
 {% include JB/setup %}
 
