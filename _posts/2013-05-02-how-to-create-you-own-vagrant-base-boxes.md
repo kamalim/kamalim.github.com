@@ -23,10 +23,13 @@ tags: "Vagrantguide"
      $echo > id_rsa.pub /home/vagrant/.ssh/authorized_keys
 	 $chmod –R 700 .ssh
 	 $chmod 644 .ssh/authorized_keys
+
    6.Edit the sudoers file as below:
+
      $visudo
      ##comment out the line with !requiretty.
-   7.Install Virtual Box Guest Additions <a href="http://www.virtualbox.org/manual/ch04.html#idp12039536">http://www.virtualbox.org/manual/ch04.html#idp12039536</a>)
+
+   7.Install Virtual Box Guest Additions <a href="http://www.virtualbox.org/manual/ch04.html#idp12039536">http://www.virtualbox.org/manual/ch04.html#idp12039536</a>
 
 
 
