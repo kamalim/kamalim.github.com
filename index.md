@@ -36,7 +36,7 @@ Interested in Infrastructure and Application Security, IaaS, PaaS and Continuous
 
   twitter: https://twitter.com/mjkamalika
   
-  LinkedIn: http://in.linkedin.com/in/kamalikamajumder
+  LinkedIn: <a href="http://in.linkedin.com/in/kamalikamajumder">http://in.linkedin.com/in/kamalikamajumder</a>
 
 
 
