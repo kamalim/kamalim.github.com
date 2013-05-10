@@ -7,7 +7,7 @@ group: navigation
 
 ### About Me
 
-  ![My Pic](/images/sprite_download.png)
+  ![My Pic](/images/icon_download.png)
 
   I am an Infrastructure Automation Specialist and a senior Devops Consultant with Thoughtworks.
 
