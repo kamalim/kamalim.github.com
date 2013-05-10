@@ -33,10 +33,9 @@ This blogpost will include the steps that I used to create a ubuntu and a window
     "Devices"  -> "Install Guest Additions"
   
   5.If you will be using Chef to manage the configuration then you can add this as part of the base image:
-    
-    Install the Windows Chef Client from:
+  Install the Windows Chef Client from:
   
-    <http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows>
+     <http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows>
     
 
   6.Disable the below services in the windows VM:
