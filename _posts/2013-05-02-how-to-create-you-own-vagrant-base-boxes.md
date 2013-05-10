@@ -94,18 +94,18 @@ So your windows vm is now ready.Lets move on to Linux Base box creation
   5.Enable ssh_key_base authentication for the VM by copying your ssh public key to the vagrant users home directory .This can be done as below:
 
     $echo > id_rsa.pub /home/vagrant/.ssh/authorized_keys
-	  $chmod –R 700 .ssh
+    $chmod –R 700 .ssh
 	  $chmod 644 .ssh/authorized_keys
 
   6.Edit the sudoers file as below:
 
-      $visudo
-      ##comment out the line below:
-      Defaults requiretty
+    $visudo
+    ##comment out the line below:
+    Defaults requiretty
      
-      ## Add the below lines:
-      $vagrant ALL=(ALL:ALL) ALL
-      $vagrant ALL=NOPASSWD: ALL
+    ## Add the below lines:
+    $vagrant ALL=(ALL:ALL) ALL
+    $vagrant ALL=NOPASSWD: ALL
 
 
   7.Install Virtual Box Guest Additions 
