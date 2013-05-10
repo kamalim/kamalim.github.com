@@ -80,8 +80,8 @@ This blogpost will include the steps that I used to create a ubuntu and a window
 So your windows vm is now ready.Lets move on to Linux Base box creation
 
 
-*Linux (Ubuntu 12.10 64 bit) base box creation*
---------------------------------------------------
+### *Linux (Ubuntu 12.10 64 bit) base box creation*
+---------------------------------------------------
 
   1.Create new machine in Virtual Box.
 
