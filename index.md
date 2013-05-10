@@ -7,7 +7,7 @@ group: navigation
 
 ### About Me
    
-  <p><img src="/images/my_photo.png" height="250px" width="180px" /></p><p>I am an Infrastructure Automation Specialist and a senior Devops Consultant with Thoughtworks.</p>
+  <img src="/images/my_photo.png" height="250px" width="180px" /><p>I am an Infrastructure Automation Specialist and a senior Devops Consultant with Thoughtworks.</p>
 
   Started my carrier as a System/Network Administrator and moved on to Infrastructure Automation across private and public clouds (AWS, Openstack, Cloudstack).
 
