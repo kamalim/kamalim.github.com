@@ -33,7 +33,7 @@ group: navigation
 
 ### Contact Me 
   
-  **email:** @gmail: Kamalika.mj
+  **email:** kamalika.mj at gmail
 
   **twitter:** <a href="https://twitter.com/mjkamalika">https://twitter.com/mjkamalika</a>
   
