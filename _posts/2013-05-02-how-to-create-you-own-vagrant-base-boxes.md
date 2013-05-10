@@ -36,7 +36,7 @@ This blogpost will include the steps that I used to create a ubuntu and a window
     
     Install the Windows Chef Client from:
   
-    <a href="http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows">http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows</a>
+    <http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows>
     
 
   6.Disable the below services in the windows VM:
@@ -109,9 +109,7 @@ So your windows vm is now ready.Lets move on to Linux Base box creation
 
   7.Install Virtual Box Guest Additions 
 
-  
-    <a href="http://www.virtualbox.org/manual/ch04.html#idp12039536">http://www.virtualbox.org/manual/ch04.html#idp12039536</a>
-
+    <http://www.virtualbox.org/manual/ch04.html#idp12039536>
 
   8.Once the above steps are complete proceed with packaging the box as below,
 
