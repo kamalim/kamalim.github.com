@@ -7,7 +7,7 @@ group: navigation
 
 ### About Me
    
-  <img src="/images/my_photo.png" height="250px" width="180px" /> 
+  ![My Pic](/images/km 2.jpg)
 
   I am an Infrastructure Automation Specialist and a senior Devops Consultant with Thoughtworks.
 
