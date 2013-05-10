@@ -87,7 +87,9 @@ So your windows vm is now ready.Lets move on to Linux Base box creation
 
   2.Keep the networking type as nat.
 
-  3.Install Ubuntu 12.10 on it.The ISO can be found here http://www.ubuntu.com/download. 
+  3.Install Ubuntu 12.10 on it.The ISO can be found @: 
+
+  <http://www.ubuntu.com/download>
 
   4.Create a user for vagrant.For ease of distribution keep the username/password as vagrant.
 
