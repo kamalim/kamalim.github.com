@@ -7,7 +7,7 @@ group: navigation
 
 ### About Me
 
-  ![Me](/images/blacktocat.png)
+  ![My Pic](/images/blacktocat.png)
 
   I am an Infrastructure Automation Specialist and a senior Devops Consultant with Thoughtworks.
 
