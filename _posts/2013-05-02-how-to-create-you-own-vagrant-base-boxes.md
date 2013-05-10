@@ -10,6 +10,7 @@ This blogpost will include the steps that I used to create a ubuntu and a window
 
 
 #### *Windows (Win 7 Enterprise 32 bit) base box creation*
+     ----------------------------------------------------
 
   1.We will be using vagrant-windows for creating the windows base box.We will require to install the below two gems:
    
