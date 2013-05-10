@@ -9,7 +9,7 @@ This blog post about creating your own vagrant base boxes from an existing Virtu
 This blogpost will include the steps that I used to create a ubuntu and a windows 7 base box in one of my personal projects.
 
 
-#### *Windows (Win 7 Enterprise 32 bit) base box creation*
+### *Windows (Win 7 Enterprise 32 bit) base box creation*
 ==========================================================
 
   1.We will be using vagrant-windows for creating the windows base box.We will require to install the below two gems:
@@ -36,7 +36,7 @@ This blogpost will include the steps that I used to create a ubuntu and a window
   5.If you will be using Chef to manage the configuration then you can add this as part of the base image:
   Install the Windows Chef Client from:
   
-  <http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows>
+    <http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows>
     
 
   6.Disable the below services in the windows VM:
@@ -80,7 +80,8 @@ This blogpost will include the steps that I used to create a ubuntu and a window
 So your windows vm is now ready.Lets move on to Linux Base box creation
 
 
-#### Linux (Ubuntu 12.10 64 bit) base box creation:
+#### *Linux (Ubuntu 12.10 64 bit) base box creation*
+====================================================
 
   1.Create new machine in Virtual Box.
 
@@ -109,7 +110,7 @@ So your windows vm is now ready.Lets move on to Linux Base box creation
 
   7.Install Virtual Box Guest Additions 
 
-  <http://www.virtualbox.org/manual/ch04.html#idp12039536>
+    <http://www.virtualbox.org/manual/ch04.html#idp12039536>
 
   8.Once the above steps are complete proceed with packaging the box as below,
 
