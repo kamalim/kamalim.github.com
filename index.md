@@ -33,11 +33,11 @@ group: navigation
 
 ### Contact Me 
   
-  email: kamalika.mj@gmail.com
+  **email:** kamalika.mj@gmail.com
 
-  twitter: <a href="https://twitter.com/mjkamalika">https://twitter.com/mjkamalika</a>
+  **twitter:** <a href="https://twitter.com/mjkamalika">https://twitter.com/mjkamalika</a>
   
-  LinkedIn: <a href="http://in.linkedin.com/in/kamalikamajumder">http://in.linkedin.com/in/kamalikamajumder</a>
+  **LinkedIn:** <a href="http://in.linkedin.com/in/kamalikamajumder">http://in.linkedin.com/in/kamalikamajumder</a>
 
 
 
