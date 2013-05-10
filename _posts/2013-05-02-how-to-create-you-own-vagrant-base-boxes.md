@@ -72,13 +72,7 @@ This blogpost will include the steps that I used to create a ubuntu and a window
     $vagrant up    
 
 
-
-
-
-
-
-
-
+So your windows vm is now ready.
 
 #### Linux (Ubuntu 12.10 64 bit) base box creation:
 
