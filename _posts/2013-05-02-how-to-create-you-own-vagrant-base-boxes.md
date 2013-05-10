@@ -100,10 +100,10 @@ So your windows vm is now ready.Lets move on to Linux Base box creation
   6.Edit the sudoers file as below:
 
     $visudo
-    *comment out the line below:*
+    >*comment out the line below:*
     Defaults requiretty
      
-    *Add the below lines:*
+    >*Add the below lines:*
     $vagrant ALL=(ALL:ALL) ALL
     $vagrant ALL=NOPASSWD: ALL
 
