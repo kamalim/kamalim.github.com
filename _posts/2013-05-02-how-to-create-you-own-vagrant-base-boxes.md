@@ -28,13 +28,15 @@ This blogpost will include the steps that I used to create a ubuntu and a window
 
   4.In order to share folders you must install the "Guest Additions" from within Virtual Box:
 
-    Select the windows VM from Virtual Box ui.
-    From the Virtual Box menu go to: 
-    "Devices" -> "CD/DVD Devices" ->"Remove disk from virtual drive" ;"Devices"  -> "Install Guest Additions"
+    Select the windows VM from Virtual Box ui.From the Virtual Box menu go to: 
+    "Devices"->"CD/DVD Devices"->"Remove disk from virtual drive" 
+    "Devices"  -> "Install Guest Additions"
   
   5.If you will be using Chef to manage the configuration then you can add this as part of the base image:
     
-    Install the Windows Chef Client from http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows
+    Install the Windows Chef Client from 
+
+    http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows
 
   6.Disable the below services in the windows VM:
 
