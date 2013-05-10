@@ -7,7 +7,7 @@ group: navigation
 
 ### About Me
    
-  ![My Pic](/images/km 2.jpg)
+  ![My Pic](/images/km.jpg)
 
   I am an Infrastructure Automation Specialist and a senior Devops Consultant with Thoughtworks.
 
