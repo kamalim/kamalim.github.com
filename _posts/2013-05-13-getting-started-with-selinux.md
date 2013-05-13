@@ -10,3 +10,9 @@ We all have our own fears and concern about how SELinux works.So most of us tend
 Recently I encountered couple of scenarios where in some of the native applications(httpd,varnish) would fail if they have to midify/create any directory/files within the root directory work if the default SElinux is in enforcing mode.So instead of disabling SELinux, I kept it in permissive mode and tweaked aroud little bit with the SELinux policies.
 
 This post is all about how we can get started with SELinux in permissive mode and slowly use as an essential security configuration in our systems.
+
+**SeLinux has three modes:**
+
+  *Enforcing: The default mode which will enable and enforce the SELinux security policy on the system, denying access and logging actions 
+  *Permissive
+  *Disabled : SELinux turned off
