@@ -21,8 +21,7 @@ This post is all about how we can get started with SELinux in permissive mode an
 
 
 ####Some useful commands:####
-
-------------------------------
+- - - - - - - - - - - - - - - 
 
 ***sestatus:*** command to view the current SELinux status
 
