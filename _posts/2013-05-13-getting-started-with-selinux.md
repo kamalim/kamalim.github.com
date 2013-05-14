@@ -42,7 +42,7 @@ In our blog we will emphasize mostly on Type Enforcement .
 All system level processes and files have an SELinux security context.
 Inorder to understand SELinux and its policies better , let's take a very common use case that some of us would have already encountered : 
 
-####Httpd####
+                                    ####Httpd####
 -------------
 If you have a linux vm (Centos.RHEL etc) you can install httpd as below:
     $yum install httpd
