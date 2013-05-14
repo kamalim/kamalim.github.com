@@ -51,21 +51,21 @@ Let us setup our webserver using httpd.If you have a linux vm (Centos.RHEL etc) 
 The default document root for httpd is : */var/www/html* 
 The default home page is at :*/var/www/html/index.html*. 
 
-Now suppose we want to point the home page to index.html in the user's home directory (e.g: /home/vagrant/index.html) and refer document root path to that in our httpd.conf .
+Now suppose we want to point the home page the user's home directory (e.g: /home/vagrant/index.html) and refer document root path to that in our httpd.conf .
 This will give us "Forbidden" error in the browser while accessing the webpage as below:
 
-![screenshot1](/images/scs-3.png)
+![screenshot3](/images/scs-3.png)
 
 In /var/log/http/error_log we see the below error:
 
-![screenshot1](/images/scs-4.png)
+![screenshot4](/images/scs-4.png)
 
 
 We can see the SELinux security context for this document root as below:
 
 ![screenshot1](/images/scs-1.png)
 
-![screenshot1](/images/scs-2.png)
+![screenshot2](/images/scs-2.png)
 
 
 
