@@ -19,8 +19,8 @@ This post is all about how we can get started with SELinux in permissive mode an
 
 **3.Disabled:** SELinux turned off.
 
-#### Some CLI options ####
----------------------------
+** Some CLI options **
+----------------------
 
     sestatus : Command to view the current SELinux status
 
