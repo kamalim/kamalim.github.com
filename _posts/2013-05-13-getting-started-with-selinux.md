@@ -13,8 +13,9 @@ This post is all about how we can get started with SELinux in permissive mode an
 
 ####SeLinux has three modes:####
 
-**1.Enforcing:** The default mode which will enable and enforce the SELinux security policy on the system, denying access and logging actions 
+**1.Enforcing:** The default mode which will enable and enforce the SELinux security policy on the system, denying access and logging actions.
 
-**2.Permissive:**
+**2.Permissive:** SELinux is enabled but will not enforce the security policy, only warn and log actions.
 
-**3.Disabled:** SELinux turned off
+**3.Disabled:** SELinux turned off.
+
