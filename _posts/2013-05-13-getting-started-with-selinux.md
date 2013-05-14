@@ -20,7 +20,6 @@ This post is all about how we can get started with SELinux in permissive mode an
 **3.Disabled:** SELinux turned off.
 
 ####*Some useful commands:*####
--------------------------------
     sestatus: command to view the current SELinux status
     =========
     setenforce: command to switch between permissive and enforcing mode through cli.
