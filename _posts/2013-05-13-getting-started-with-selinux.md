@@ -36,8 +36,8 @@ By design, SELinux allows different policies to be written that are interchangea
 **Role-Based Access Control (RBAC):** Based around SELinux users (not necessarily the same as the Linux user), but not used in the default targeted policy
 
 **Multi-Level Security (MLS):** Not commonly used and often hidden in the default targeted policy. 
-------------------------------
 
+------------------------------------------------------------------------------------------------------------------
 In our blog we will emphasize mostly on Type Enforcement .
 All system level processes and files have an SELinux security context.
 Inorder to understand SELinux and its policies better , let's take a very common use case that some of us would have already encountered : 
