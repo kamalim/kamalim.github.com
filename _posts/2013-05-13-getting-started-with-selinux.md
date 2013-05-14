@@ -30,7 +30,7 @@ This post is all about how we can get started with SELinux in permissive mode an
 By design, SELinux allows different policies to be written that are interchangeable. The default policy in CentOS 4, 5 and 6 is the targeted policy which "targets" and confines selected system processes.
 
 ###SElinux Access Control:###
-------------------------------
+
 **Type Enforcement (TE):** Type Enforcement is the primary mechanism of access control used in the targeted policy
 
 **Role-Based Access Control (RBAC):** Based around SELinux users (not necessarily the same as the Linux user), but not used in the default targeted policy
