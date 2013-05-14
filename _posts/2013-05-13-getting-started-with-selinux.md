@@ -6,9 +6,7 @@ tags: [Security]
 {% include JB/setup %}
 
 We all have our own fears and concern about how SELinux works.So most of us tend to disable SELinux before we start up using a linux machine.But I think this is not the ideal solution especially with the present day situations where in we can not just leave our webservers open on to internet without any security policies applied to it.
-
 Recently I encountered couple of scenarios where in some of the native applications(httpd,varnish) would fail if they have to midify/create any directory/files within the root directory work if the default SElinux is in enforcing mode.So instead of disabling SELinux, I kept it in permissive mode and tweaked aroud little bit with the SELinux policies.
-
 This post is all about how we can get started with SELinux in permissive mode and slowly use as an essential security configuration in our systems.
 
 ###SeLinux has three modes:###
@@ -44,12 +42,26 @@ Inorder to understand SELinux and its policies better , let's take a very common
 
 ####Httpd####
 -------------
-If you have a linux vm (Centos.RHEL etc) you can install httpd as below:
+Let us setup our webserver using httpd.If you have a linux vm (Centos.RHEL etc) you can install httpd as below:
     
     $yum install httpd
-    This will install httpd in your machine and created the related folder under /etc/httpd
+    This will install httpd in your machine and created the related  conf files under /etc/httpd
+    $service httpd start
 
-The default document root for httpd is : */var/www/html* and the home page defaults to */var/www/html/index.html*. More details can be found in /etc/httpd/conf/httpd.conf.We can see the SELinux security context for this document root as below:
+The default document root for httpd is : */var/www/html* 
+The default home page is at :*/var/www/html/index.html*. 
+
+Now suppose we want to point the home page to index.html in the user's home directory (e.g: /home/vagrant/index.html) and refer document root path to that in our httpd.conf .
+This will give us "Forbidden" error in the browser while accessing the webpage as below:
+
+![screenshot1](/images/scs-3.png)
+
+In /var/log/http/error_log we see the below error:
+
+![screenshot1](/images/scs-4.png)
+
+
+We can see the SELinux security context for this document root as below:
 
 ![screenshot1](/images/scs-1.png)
 
