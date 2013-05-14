@@ -21,12 +21,11 @@ This post is all about how we can get started with SELinux in permissive mode an
 
 ####*Some useful commands:*####
 -------------------------------
-***sestatus:*** command to view the current SELinux status
-
-***setenforce:*** command to switch between permissive and enforcing mode through cli.
-
-But the changes wont exist on system reboot.To make the change permanent edit the file /etc/selinux/config.
-
+    sestatus: command to view the current SELinux status
+    =========
+    setenforce: command to switch between permissive and enforcing mode through cli.
+    ===========
+    But the changes wont exist on system reboot.To make the change permanent edit the file /etc/selinux/config.
 
 By design, SELinux allows different policies to be written that are interchangeable. The default policy in CentOS 4, 5 and 6 is the targeted policy which "targets" and confines selected system processes.
 
@@ -37,7 +36,9 @@ By design, SELinux allows different policies to be written that are interchangea
 **Role-Based Access Control (RBAC):** Based around SELinux users (not necessarily the same as the Linux user), but not used in the default targeted policy
 
 **Multi-Level Security (MLS):** Not commonly used and often hidden in the default targeted policy. 
+------------------------------
 
+In our blog we will emphasize mostly on Type Enforcement .
 All system level processes and files have an SELinux security context.
 Inorder to understand SELinux and its policies better , let's take a very common use case that some of us would have already encountered : 
 
