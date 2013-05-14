@@ -51,7 +51,7 @@ If you have a linux vm (Centos.RHEL etc) you can install httpd as below:
 
 The default document root for httpd is : */var/www/html* and the home page defaults to */var/www/html/index.html*. More details can be found in /etc/httpd/conf/httpd.conf.We can see the SELinux security context for this document root as below:
 
-$ls -Z /var/www/html
+![screenshot1](/images/sc-1.png)
 
 
 $ls -Z /var/www/html
