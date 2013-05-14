@@ -20,7 +20,7 @@ This post is all about how we can get started with SELinux in permissive mode an
 **3.Disabled:** SELinux turned off.
 
 
-####Some useful commands:####
+####*Some useful commands:*####
 -----------------------------
 ***sestatus:*** command to view the current SELinux status
 
