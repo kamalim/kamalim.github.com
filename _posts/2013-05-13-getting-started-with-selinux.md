@@ -37,12 +37,13 @@ By design, SELinux allows different policies to be written that are interchangea
 **Multi-Level Security (MLS):** Not commonly used and often hidden in the default targeted policy. 
 
 ------------------------------------------------------------------------------------------------------------------
+
 In our blog we will emphasize mostly on Type Enforcement .
 All system level processes and files have an SELinux security context.
 Inorder to understand SELinux and its policies better , let's take a very common use case that some of us would have already encountered : 
 
 ***Httpd***
-
+------------
 If you have a linux vm (Centos.RHEL etc) you can install httpd as below:
     $yum install httpd
     This will install httpd in your machine and created the related folder under /etc/httpd
