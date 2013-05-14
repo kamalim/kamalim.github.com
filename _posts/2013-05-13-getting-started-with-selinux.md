@@ -21,9 +21,10 @@ This post is all about how we can get started with SELinux in permissive mode an
 
 
 ####Some useful commands####
-----------------------------
-_*sestatus:*_command to view the current SELinux status
+============================
 
-_*setenforce:*_ command to switch between permissive and enforcing mode through cli.
+***sestatus:*** command to view the current SELinux status
+
+***setenforce:*** command to switch between permissive and enforcing mode through cli.
 
 But the changes wont exist on system reboot.Inorder to make the change permanent edit the file /etc/selinux/config.
