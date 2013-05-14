@@ -37,3 +37,23 @@ By design, SELinux allows different policies to be written that are interchangea
 **Role-Based Access Control (RBAC):** Based around SELinux users (not necessarily the same as the Linux user), but not used in the default targeted policy
 
 **Multi-Level Security (MLS):** Not commonly used and often hidden in the default targeted policy. 
+
+All system level processes and files have an SELinux security context.
+Inorder to understand SELinux and its policies better , let's take a very common use case that some of us would have already encountered : 
+
+***Httpd***
+
+If you have a linux vm (Centos.RHEL etc) you can install httpd as below:
+    $yum install httpd
+    This will install httpd in your machine and created the related folder under /etc/httpd
+
+The default document root for httpd is : */var/www/html* and the home page defaults to */var/www/html/index.html*. More details can be found in /etc/httpd/conf/httpd.conf.We can see the SELinux security context for this document root as below:
+
+$ls -Z /var/www/html
+
+
+$ls -Z /var/www/html
+
+
+
+
