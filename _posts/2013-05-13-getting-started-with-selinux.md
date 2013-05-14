@@ -11,10 +11,10 @@ Recently I encountered couple of scenarios where in some of the native applicati
 
 This post is all about how we can get started with SELinux in permissive mode and slowly use as an essential security configuration in our systems.
 
-**SeLinux has three modes:**
+***SeLinux has three modes:***
 
-  *1.Enforcing*: The default mode which will enable and enforce the SELinux security policy on the system, denying access and logging actions 
+*1.Enforcing*: The default mode which will enable and enforce the SELinux security policy on the system, denying access and logging actions 
 
-  *2.Permissive*:
+*2.Permissive*:
 
-  *3.Disabled:* SELinux turned off
+*3.Disabled:* SELinux turned off
