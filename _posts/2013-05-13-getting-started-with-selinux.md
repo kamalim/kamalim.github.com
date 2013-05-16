@@ -45,7 +45,7 @@ Inorder to understand SELinux and its policies better, let's go through my own e
 -----------------------------------------------
 **Goal:** My intent was to setup a simple webserver using apache httpd, where my website contents will be there in my home directory /home/vagrant/content. With this goal in mind I started as below.
 
-1.In a linux vm (Centos.RHEL etc) install httpd as below:
+* In a linux vm (Centos.RHEL etc) install httpd as below:
     
     $yum install httpd
     This will install httpd in your machine and created the related  conf files under /etc/httpd
@@ -58,12 +58,15 @@ Inorder to understand SELinux and its policies better, let's go through my own e
 
     DocumentRoot "/home/vagrant" 
 
-*The default document root for httpd is : /var/www/html* 
-*The default home page is at :/var/www/html/index.html*. 
+ *The default document root for httpd is : /var/www/html* 
+ *The default home page is at :/var/www/html/index.html*. 
+
+* Now restart httpd service.
+    $service httpd restart.
 
 
+If you try to access the page from browser http://my.vm.ip, it gave "Forbidded" error as below:
 
-This will give us "Forbidden" error in the browser while accessing the webpage as below:
 
 ![screenshot3](/images/scs-3.png)
 
