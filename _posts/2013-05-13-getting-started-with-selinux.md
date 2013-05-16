@@ -94,7 +94,9 @@ The SELinux context for our index.html (/home/vagrant/index.html) can be seen as
 
 ![screenshot5](/images/scs-4.png)
 
-So httpd gets permission denied on trying to access index.html in /home/vagrant.
+Access can only be allowed for similar types.So we can see that httpd with context type **httpd_t** can access its default homepage (/var/www/html/index.html) with context type **httpd_sys_content_t** because both belong to the same domain.
+Whereas  the selinux context type for /home/vagrant/index.html (user_home_t) is not http_t , So httpd gets permission denied on trying to access index.html in /home/vagrant though the file is readable .
+
 
 
 
