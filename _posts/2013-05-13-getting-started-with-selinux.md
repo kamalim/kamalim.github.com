@@ -47,7 +47,7 @@ Inorder to understand SELinux and its policies better, let's go through my own e
 -----------------------------------------------
 **Goal:** My intent was to setup a simple webserver using apache httpd, where my website contents will be there in my home directory /home/vagrant/content. With this goal in mind I started as below.
 
-* In a linux vm (Centos.RHEL etc) install httpd as below:
+* In a linux vm (Centos.RHEL etc) install httpd as below.
 
     $yum install httpd
 
@@ -58,7 +58,7 @@ Inorder to understand SELinux and its policies better, let's go through my own e
 * Create a simple home page at /home/vagrant/index.html.
 
 + Change the DocumentRoot path to "/home/vagrant".The can be done by commenting out all lines in
- /etc/httpd/conf.d/welcome.conf and change the below line in /etc/httpd/conf/httpd.conf
+ /etc/httpd/conf.d/welcome.conf and change the below line in /etc/httpd/conf/httpd.conf.
 
     DocumentRoot "/home/vagrant" 
 
@@ -70,21 +70,25 @@ Inorder to understand SELinux and its policies better, let's go through my own e
     $service httpd restart.
 
 
-If you try to access the page from browser http://my.vm.ip, it gave "403 Forbidden" error as below:
-
+On trying to access the page from browser http://my.vm.ip, it gave "403 Forbidden" error as below:
+--------------------------------------------------------------------------------------------------
 
 ![screenshot3](/images/scs-3.png)
 
-In /var/log/http/error_log we see the below error:
+---------------------------------
+
+I looked at logs in  /var/log/http/error_log and found  the below error:
 
 ![screenshot4](/images/scs-4.png)
 
-
-We can see the SELinux security context for this document root as below:
+This is because httpd is one of the system processed which are under targetted SELinux policy.In order to get more details , let us see the SELinux context for the default DocumentRoot for httpd (/var/www/html)
 
 ![screenshot1](/images/scs-1.png)
 
 ![screenshot2](/images/scs-2.png)
+
+Whereas the SELinux context of the home directory (/home/vagrant) is 
+
 
 
 
