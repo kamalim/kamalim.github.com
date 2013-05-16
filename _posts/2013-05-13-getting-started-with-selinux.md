@@ -73,9 +73,7 @@ Inorder to understand SELinux and its policies better, let's go through my own e
 On trying to access the page from browser http://my.vm.ip, it gave "403 Forbidden" error as below:
 
 ---------------------------------
-
 ![screenshot3](/images/scs-3.png)
-
 ---------------------------------
 
 I looked at logs in  /var/log/http/error_log and found  the below error:
