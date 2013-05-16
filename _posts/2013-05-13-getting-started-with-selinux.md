@@ -28,6 +28,8 @@ By design, SELinux allows different policies to be written that are interchangea
 
 ###SElinux Access Control:###
 
+*Some of these details have been reffered from <http://wiki.centos.org/HowTos/SELinux>
+
 **Type Enforcement (TE):** Type Enforcement is the primary mechanism of access control used in the targeted policy
 
 **Role-Based Access Control (RBAC):** Based around SELinux users (not necessarily the same as the Linux user), but not used in the default targeted policy
@@ -64,10 +66,11 @@ Inorder to understand SELinux and its policies better, let's go through my own e
  *The default home page is at :/var/www/html/index.html*. 
 
 * Now restart httpd service.
+
     $service httpd restart.
 
 
-If you try to access the page from browser http://my.vm.ip, it gave "Forbidded" error as below:
+If you try to access the page from browser http://my.vm.ip, it gave "403 Forbidden" error as below:
 
 
 ![screenshot3](/images/scs-3.png)
