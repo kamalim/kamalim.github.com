@@ -73,18 +73,24 @@ Inorder to understand SELinux and its policies better, let's go through my own e
 On trying to access the page from browser http://my.vm.ip, it gave "403 Forbidden" error as below:
 
 ---------------------------------
-![screenshot3](/images/scs-3.png)
+![screenshot1](/images/scs-3.png)
 ---------------------------------
 
 I looked at logs in  /var/log/http/error_log and found  the below error:
 
-![screenshot4](/images/scs-2.png)
+![screenshot2](/images/scs-2.png)
 
 This is because httpd is one of the system processed which are under targetted SELinux policy.In order to get more details , let us see the SELinux context for the default DocumentRoot for httpd (/var/www/html)
 
-![screenshot1](/images/scs-1.png)
+![screenshot3](/images/scs-1.png)
 
-Whereas the SELinux context of the home directory (/home/vagrant) is 
+Whereas our customized DocumentRoot (/home/vagrant) is not under SELinux targetted policy.So httpd gets permission denied on trying to access index.html in /home/vagrant.
+
+
+
+
+
+
 
 
 
