@@ -86,11 +86,11 @@ This is because httpd is one of the system processed which are under targetted S
 
 **The -Z option can be used with most cli options to get the SELinux context modes (e.g: ls -Z, ps -axZ)**
 
-SELinux context for Apache/httpd process is 
+SELinux context for Apache/httpd process is:
 
 ![screenshot4](/images/scs-5.png)
 
-The SELinux context for our index.html (/home/vagrant/index.html) is 
+The SELinux context for our index.html (/home/vagrant/index.html) can be seen as below:
 
 ![screenshot5](/images/scs-4.png)
 
