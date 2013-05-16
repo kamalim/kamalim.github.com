@@ -46,7 +46,6 @@ Inorder to understand SELinux and its policies better, let's go through my own e
 **Goal:** My intent was to setup a simple webserver using apache httpd, where my website contents will be there in my home directory /home/vagrant/content. With this goal in mind I started as below.
 
 * In a linux vm (Centos.RHEL etc) install httpd as below:
-    
     $yum install httpd
     This will install httpd in your machine and created the related  conf files under /etc/httpd
     $service httpd start
