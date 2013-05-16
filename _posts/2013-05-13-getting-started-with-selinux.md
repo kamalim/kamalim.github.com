@@ -45,7 +45,7 @@ Inorder to understand SELinux and its policies better, let's go through my own e
 
 ###Debugging and Troubleshooting SELinux:###
 -----------------------------------------------
-**Goal:** My intent was to setup a simple webserver using apache httpd, where my website contents will be there in my home directory /home/vagrant/content. With this goal in mind I started as below.
+**Goal:** My intent was to setup a simple webserver using apache httpd, where my website contents will be there in my home directory /home/vagrant/html. With this goal in mind I started as below.
 
 * In a linux vm (Centos.RHEL etc) install httpd as below.
 
@@ -55,12 +55,12 @@ Inorder to understand SELinux and its policies better, let's go through my own e
     
     $service httpd start
 
-* Create a simple home page at /home/vagrant/index.html.
+* Create a simple home page at /home/vagrant/html/index.html.
 
 + Change the DocumentRoot path to "/home/vagrant".The can be done by commenting out all lines in
  /etc/httpd/conf.d/welcome.conf and change the below line in /etc/httpd/conf/httpd.conf.
 
-    DocumentRoot "/home/vagrant" 
+    DocumentRoot "/home/vagrant/html" 
 
  *The default document root for httpd is : /var/www/html* 
  *The default home page is at :/var/www/html/index.html*. 
@@ -90,14 +90,22 @@ SELinux context for Apache/httpd process is:
 
 ![screenshot4](/images/scs-5.png)
 
-The SELinux context for our index.html (/home/vagrant/index.html) can be seen as below:
+The SELinux context for our index.html (/home/vagrant/html/index.html) can be seen as below:
 
 ![screenshot5](/images/scs-4.png)
 
+
 Access can only be allowed for similar types.So we can see that httpd with context type **httpd_t** can access its default homepage (/var/www/html/index.html) with context type **httpd_sys_content_t** because both belong to the same domain.
-Whereas  the selinux context type for /home/vagrant/index.html (user_home_t) is not http_t , So httpd gets permission denied on trying to access index.html in /home/vagrant though the file is readable .
+Whereas  the selinux context type for /home/vagrant/html/index.html (user_home_t) is not http_t , So httpd gets permission denied on trying to access index.html in /home/vagrant/html though the file is readable .
 
 
+This can be solved by either relabeling the SELinux context on the desired directory that we want httpd to access.
+
+The cli utility to do that is "chcon". For example: changing context for index.html:
+
+![screenshot6](/images/scs-6.png)
+
+![screenshot7](/images/scs-7.png)
 
 
 
