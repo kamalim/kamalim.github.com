@@ -41,13 +41,16 @@ All system level processes and files have an SELinux security context.
 Inorder to understand SELinux and its policies better, let's go through my own experience while setting up a simple http server .
 
 
-####Debugging and Troubleshooting SELinux:####
+###Debugging and Troubleshooting SELinux:###
 -----------------------------------------------
 **Goal:** My intent was to setup a simple webserver using apache httpd, where my website contents will be there in my home directory /home/vagrant/content. With this goal in mind I started as below.
 
 * In a linux vm (Centos.RHEL etc) install httpd as below:
+
     $yum install httpd
+
     This will install httpd in your machine and created the related  conf files under /etc/httpd
+    
     $service httpd start
 
 * Create a simple home page at /home/vagrant/index.html.
