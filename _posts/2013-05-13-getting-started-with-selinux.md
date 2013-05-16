@@ -80,11 +80,21 @@ I looked at logs in  /var/log/http/error_log and found  the below error:
 
 ![screenshot2](/images/scs-2.png)
 
-This is because httpd is one of the system processed which are under targetted SELinux policy.In order to get more details , let us see the SELinux context for the default DocumentRoot for httpd (/var/www/html)
+This is because httpd is one of the system processed which are under targetted SELinux policy.In order to get more idea, let us see the SELinux context for the default DocumentRoot for httpd (/var/www/html)
 
 ![screenshot3](/images/scs-1.png)
 
-Whereas our customized DocumentRoot (/home/vagrant) is not under SELinux targetted policy.So httpd gets permission denied on trying to access index.html in /home/vagrant.
+**The -Z option can be used with most cli options to get the SELinux context modes (e.g: ls -Z, ps -axZ)**
+
+SELinux context for Apache/httpd process is 
+
+![screenshot4](/images/scs-5.png)
+
+The SELinux context for our index.html (/home/vagrant/index.html) is 
+
+![screenshot5](/images/scs-4.png)
+
+So httpd gets permission denied on trying to access index.html in /home/vagrant.
 
 
 
