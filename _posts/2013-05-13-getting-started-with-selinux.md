@@ -38,20 +38,31 @@ By design, SELinux allows different policies to be written that are interchangea
 
 In our blog we will emphasize mostly on Type Enforcement .
 All system level processes and files have an SELinux security context.
-Inorder to understand SELinux and its policies better , let's take a very common use case that some of us would have already encountered : 
+Inorder to understand SELinux and its policies better, let's go through my own experience while setting up a simple http server .
 
-####Httpd####
--------------
-Let us setup our webserver using httpd.If you have a linux vm (Centos.RHEL etc) you can install httpd as below:
+
+####Debugging and Troubleshooting SELinux:####
+-----------------------------------------------
+**Goal:** My intent was to setup a simple webserver using apache httpd, where my website contents will be there in my home directory /home/vagrant/content. With this goal in mind I started as below.
+
+1.In a linux vm (Centos.RHEL etc) install httpd as below:
     
     $yum install httpd
     This will install httpd in your machine and created the related  conf files under /etc/httpd
     $service httpd start
 
-The default document root for httpd is : */var/www/html* 
-The default home page is at :*/var/www/html/index.html*. 
+* Create a simple home page at /home/vagrant/index.html.
 
-Now suppose we want to point the home page the user's home directory (e.g: /home/vagrant/index.html) and refer document root path to that in our httpd.conf .
++ Change the DocumentRoot path to "/home/vagrant".The can be done by commenting out all lines in
+ /etc/httpd/conf.d/welcome.conf and change the below line in /etc/httpd/conf/httpd.conf
+
+    DocumentRoot "/home/vagrant" 
+
+*The default document root for httpd is : /var/www/html* 
+*The default home page is at :/var/www/html/index.html*. 
+
+
+
 This will give us "Forbidden" error in the browser while accessing the webpage as below:
 
 ![screenshot3](/images/scs-3.png)
