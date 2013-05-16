@@ -80,7 +80,7 @@ On trying to access the page from browser http://my.vm.ip, it gave "403 Forbidde
 
 I looked at logs in  /var/log/http/error_log and found  the below error:
 
-![screenshot4](/images/scs-4.png)
+![screenshot4](/images/scs-2.png)
 
 This is because httpd is one of the system processed which are under targetted SELinux policy.In order to get more details , let us see the SELinux context for the default DocumentRoot for httpd (/var/www/html)
 
