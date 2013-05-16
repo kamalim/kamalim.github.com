@@ -86,8 +86,6 @@ This is because httpd is one of the system processed which are under targetted S
 
 ![screenshot1](/images/scs-1.png)
 
-![screenshot2](/images/scs-2.png)
-
 Whereas the SELinux context of the home directory (/home/vagrant) is 
 
 
