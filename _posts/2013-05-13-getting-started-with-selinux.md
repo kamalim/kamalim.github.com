@@ -107,6 +107,13 @@ The cli utility to do that is "chcon". For example: changing context for index.h
 
 ![screenshot7](/images/scs-7.png)
 
+You can use Audit2Allow tool to write SElinux policies.The log messages in /var/log/audit/audit.log are audit2allow friendly.
+
+More details on how to use audit2allow can be found on <http://wiki.centos.org/HowTos/SELinux>
+
+
+Thats all for today.Have a nice time with SELinux !!!
+
 
 
 
