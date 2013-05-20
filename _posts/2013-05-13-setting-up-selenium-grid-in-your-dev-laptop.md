@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Setting up Selenium Grid in your dev laptop"
-description: "" 
 tags: [Vagrantguide]
 ---
 {% include JB/setup %}
@@ -9,4 +8,8 @@ tags: [Vagrantguide]
 
  This blog is about setting up a Selenium Grid within your laptopn.More details can be found here : 
 
-   <https://github.com/kamalim/selenium_grid>
+<ul>
+  
+  <a href="https://github.com/kamalim/selenium_grid">Selenium_Grid Setup</a>
+
+</ul>
