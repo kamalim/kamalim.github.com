@@ -8,7 +8,7 @@ tags: "Vagrantguide"
 
 ## Prerequisites in local laptop:
 
-  1.Install Vagrant 
+  1.Install Vagrant (The scope of this blog is only till 1.0.x)
 
     http://downloads.vagrantup.com/
 
