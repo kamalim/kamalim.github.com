@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Getting Started with SELinux"
-tags: [Security]
+tags: Security
 ---
 {% include JB/setup %}
 

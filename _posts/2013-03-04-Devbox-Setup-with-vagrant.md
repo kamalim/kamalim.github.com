@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Devbox Setup With Vagrant"
-tags: "Vagrantguide"
+tags: "Vagrantguide-1.0"
 ---
 {% include JB/setup %}
 

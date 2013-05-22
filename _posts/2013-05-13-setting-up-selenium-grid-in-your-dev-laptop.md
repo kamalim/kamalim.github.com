@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Setting up Selenium Grid in your dev laptop"
-tags: [Vagrantguide]
+tags: Vagrantguide-1.0
 ---
 {% include JB/setup %}
 
