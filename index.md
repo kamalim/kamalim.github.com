@@ -25,8 +25,13 @@ group: navigation
 
 <ul>
   <li>
+    <a href="http://www.slideshare.net/kamalikamj/automating-dev-environment-introduction-to">Automating Dev Environment - Introduction to Docker and Chef</a>
+  </li>
+  </ul>
+
+<ul>
+  <li>
   <a href="http://www.slideshare.net/kamalikamj/identity-management-15171366">Identity Management in 802.1x networks</a>
-  <a href="http://www.slideshare.net/kamalikamj/automating-dev-environment-introduction-to">Automating Dev Environment - Introduction to Docker and Chef</a>
 </li>
 </ul>
 
