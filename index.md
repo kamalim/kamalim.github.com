@@ -31,9 +31,9 @@ group: navigation
 
 <ul>
   <li>
-  <a href="http://www.slideshare.net/kamalikamj/identity-management-15171366">Identity Management in 802.1x networks</a>
-</li>
-</ul>
+    <a href="http://www.slideshare.net/kamalikamj/identity-management-15171366">Identity Management in 802.1x networks</a>
+  </li>
+  </ul>
 
 ### Contact Me 
   
