@@ -6,7 +6,7 @@ tags: Security
 {% include JB/setup %}
 
 We all have our own fears and concern about how SELinux works.So most of us tend to disable SELinux before we start up using a linux machine.But I think this is not the ideal solution especially with the present day situations where in we can not just leave our webservers open on to internet without any security policies applied to it.
-Recently I encountered couple of scenarios where in some of the native applications(httpd,varnish) would fail if they have to midify/create any directory/files within the root directory work if the default SElinux is in enforcing mode.So instead of disabling SELinux, I kept it in permissive mode and tweaked aroud little bit with the SELinux policies.
+Recently I encountered couple of scenarios where in some of the native applications(httpd,varnish) would fail if they have to modify/create any directory/files within the root directory work if the default SElinux is in enforcing mode.So instead of disabling SELinux, I kept it in permissive mode and tweaked aroud little bit with the SELinux policies.
 This post is all about how we can get started with SELinux in permissive mode and slowly use as an essential security configuration in our systems.
 
 ###SeLinux has three modes:###
