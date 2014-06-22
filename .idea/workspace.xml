@@ -25,13 +25,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="593" selection-end="593" vertical-scroll-proportion="0.13819876" vertical-offset="91" max-vertical-offset="810">
+            <state line="10" column="6" selection-start="212" selection-end="212" vertical-scroll-proportion="-2.1851852" vertical-offset="91" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-05-13-getting-started-with-selinux.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2013-05-13-getting-started-with-selinux.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="11" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.46583852" vertical-offset="0" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
@@ -280,6 +292,16 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="212" selection-end="212" vertical-scroll-proportion="-2.1851852" vertical-offset="91" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2013-05-13-getting-started-with-selinux.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -288,17 +310,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="128" selection-start="564" selection-end="564" vertical-scroll-proportion="0.16304348" vertical-offset="15" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="593" selection-end="593" vertical-scroll-proportion="0.13819876" vertical-offset="91" max-vertical-offset="810">
+        <state line="20" column="11" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.46583852" vertical-offset="0" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
