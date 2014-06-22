@@ -1,0 +1,73 @@
+
+<h2 id="prerequisites-in-local-laptop">Prerequisites in local laptop:</h2>
+
+<p>1.Install Vagrant (The scope of this blog is only till 1.0.x)</p>
+
+<pre><code>http://downloads.vagrantup.com/
+</code></pre>
+
+<p>2.Install Oracle Virtual Box </p>
+
+<pre><code>https://www.virtualbox.org/wiki/Downloads
+</code></pre>
+
+<p>3.Install chef-client </p>
+
+<pre><code>http://wiki.opscode.com/display/chef/Installation
+</code></pre>
+
+<h2 id="steps-to-setup-dev-environment">Steps to setup Dev environment:</h2>
+
+<p>1.Clone the chef repo:</p>
+
+<pre><code>git clone git@your-chef-repo.git  
+</code></pre>
+
+<p>2.Copy  Vagrant box from location below:</p>
+
+<pre><code>git clone git@github.com:kamalim/Vagrant.git
+</code></pre>
+
+<p>3.Adding the vagrant box:</p>
+
+<pre><code>$cd Vagrant
+$vagrant box add centos-chef centos_with_chef.box
+</code></pre>
+
+<ol>
+  <li>Create vagrant project:</li>
+</ol>
+
+<pre><code>$mkdir -p ~/dev
+$cd ~/dev
+$vagrant init 
+</code></pre>
+
+<p>The above command creates a Vagrantfile in “dkit-dev” directory add the below configs in the Vagrantfile.
+  This Vagrantfile config is for creating one vm.If you want to create multiple vms please refer to the sample Vangrantfile uploaded in Devops Drive</p>
+
+<pre><code>Vagrant::Config.run do |config|
+ 
+  config.vm.define :dkitdev do |dkitdev_config|
+     dkitdev_config.vm.box = "centos-chef"
+     dkitdev_config.vm.boot_mode = :gui
+     dkitdev_config.ssh.private_key_path = '/path to/ vagrant folder/ copied in step 1/id_rsa'
+     dkitdev_config.vm.network :bridged, :bridge =&gt; "&lt;respective ethernet port on laptop&gt;"   e.g : "en3: USB Ethernet 2"
+     dkitdev_config.vm.host_name = "dkit-dev"
+  end
+  config.vm.provision :chef_solo do |chef|
+      chef.cookbooks_path = "..&lt;path to the chef-repo clone&gt;/cookbooks"
+      chef.roles_path = "..&lt;path to the chef-repo clone&gt;/roles"
+      chef.add_role "indexserver”
+      chef.add_role "access_controller"
+      chef.add_role "readerprod"
+  end
+</code></pre>
+
+<p>Once the above configs are added, save and close the vagrantfile and run vagrant up.
+  This will create a vm with the respective role mentioned in the config.</p>
+
+<pre><code>$vagrant up
+</code></pre>
+
+<p>5.Once the vagrant vm is ready, the application can be deployed in the VM.</p>

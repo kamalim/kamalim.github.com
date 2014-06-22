@@ -1,0 +1,116 @@
+
+<p>We all have our own fears and concern about how SELinux works.So most of us tend to disable SELinux before we start up using a linux machine.But I think this is not the ideal solution especially with the present day situations where in we can not just leave our webservers open on to internet without any security policies applied to it.
+Recently I encountered couple of scenarios where in some of the native applications(httpd,varnish) would fail if they have to modify/create any directory/files within the root directory work if the default SElinux is in enforcing mode.So instead of disabling SELinux, I kept it in permissive mode and tweaked aroud little bit with the SELinux policies.
+This post is all about how we can get started with SELinux in permissive mode and slowly use as an essential security configuration in our systems.</p>
+
+<h3 id="selinux-has-three-modes">SeLinux has three modes:</h3>
+<hr />
+<p><strong>1.Enforcing:</strong> The default mode which will enable and enforce the SELinux security policy on the system, denying access and logging actions.</p>
+
+<p><strong>2.Permissive:</strong> SELinux is enabled but will not enforce the security policy, only warn and log actions.</p>
+
+<p><strong>3.Disabled:</strong> SELinux turned off.</p>
+
+<h4 id="some-useful-commands"><em>Some useful commands:</em></h4>
+<pre><code>sestatus: command to view the current SELinux status
+=========
+setenforce: command to switch between permissive and enforcing mode through cli.
+===========
+But the changes wont exist on system reboot.To make the change permanent edit the file /etc/selinux/config.
+</code></pre>
+
+<p>By design, SELinux allows different policies to be written that are interchangeable. The default policy in CentOS 4, 5 and 6 is the targeted policy which &#8220;targets&#8221; and confines selected system processes.</p>
+
+<h3 id="selinux-access-control">SElinux Access Control:</h3>
+
+<p>*Some of these details have been reffered from <a href="http://wiki.centos.org/HowTos/SELinux">http://wiki.centos.org/HowTos/SELinux</a></p>
+
+<p><strong>Type Enforcement (TE):</strong> Type Enforcement is the primary mechanism of access control used in the targeted policy</p>
+
+<p><strong>Role-Based Access Control (RBAC):</strong> Based around SELinux users (not necessarily the same as the Linux user), but not used in the default targeted policy</p>
+
+<p><strong>Multi-Level Security (MLS):</strong> Not commonly used and often hidden in the default targeted policy. </p>
+
+<hr />
+
+<p>In our blog we will emphasize mostly on Type Enforcement .
+All system level processes and files have an SELinux security context.
+Inorder to understand SELinux and its policies better, let&#8217;s go through my own experience while setting up a simple http server .</p>
+
+<h3 id="debugging-and-troubleshooting-selinux">Debugging and Troubleshooting SELinux:</h3>
+<hr />
+<p><strong>Goal:</strong> My intent was to setup a simple webserver using apache httpd, where my website contents will be there in my home directory /home/vagrant/html. With this goal in mind I started as below.</p>
+
+<ul>
+  <li>
+    <p>In a linux vm (Centos.RHEL etc) install httpd as below.</p>
+
+    <p>$yum install httpd</p>
+
+    <p>This will install httpd in your machine and created the related  conf files under /etc/httpd</p>
+
+    <p>$service httpd start</p>
+  </li>
+  <li>
+    <p>Create a simple home page at /home/vagrant/html/index.html.</p>
+  </li>
+  <li>
+    <p>Change the DocumentRoot path to &#8220;/home/vagrant&#8221;.The can be done by commenting out all lines in
+ /etc/httpd/conf.d/welcome.conf and change the below line in /etc/httpd/conf/httpd.conf.</p>
+
+    <p>DocumentRoot &#8220;/home/vagrant/html&#8221; </p>
+  </li>
+</ul>
+
+<p><em>The default document root for httpd is : /var/www/html</em> 
+ <em>The default home page is at :/var/www/html/index.html</em>. </p>
+
+<ul>
+  <li>
+    <p>Now restart httpd service.</p>
+
+    <p>$service httpd restart.</p>
+  </li>
+</ul>
+
+<p>On trying to access the page from browser http://my.vm.ip, it gave &#8220;403 Forbidden&#8221; error as below:</p>
+
+<hr />
+<p><img src="/images/scs-3.png" alt="screenshot1" />
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+
+<p>I looked at logs in  /var/log/http/error_log and found  the below error:</p>
+
+<p><img src="/images/scs-2.png" alt="screenshot2" /></p>
+
+<p>This is because httpd is one of the system processed which are under targetted SELinux policy.In order to get more idea, let us see the SELinux context for the default DocumentRoot for httpd (/var/www/html)</p>
+
+<p><img src="/images/scs-1.png" alt="screenshot3" /></p>
+
+<p><strong>The -Z option can be used with most cli options to get the SELinux context modes (e.g: ls -Z, ps -axZ)</strong></p>
+
+<p>SELinux context for Apache/httpd process is:</p>
+
+<p><img src="/images/scs-5.png" alt="screenshot4" /></p>
+
+<p>The SELinux context for our index.html (/home/vagrant/html/index.html) can be seen as below:</p>
+
+<p><img src="/images/scs-4.png" alt="screenshot5" /></p>
+
+<p>Access can only be allowed for similar types.So we can see that httpd with context type <strong>httpd_t</strong> can access its default homepage (/var/www/html/index.html) with context type <strong>httpd_sys_content_t</strong> because both belong to the same domain.
+Whereas  the selinux context type for /home/vagrant/html/index.html (user_home_t) is not http_t , So httpd gets permission denied on trying to access index.html in /home/vagrant/html though the file is readable .</p>
+
+<p>This can be solved by either relabeling the SELinux context on the desired directory that we want httpd to access.</p>
+
+<p>The cli utility to do that is &#8220;chcon&#8221;. For example: changing context for index.html:</p>
+
+<p><img src="/images/scs-6.png" alt="screenshot6" /></p>
+
+<p><img src="/images/scs-7.png" alt="screenshot7" /></p>
+
+<p>You can use Audit2Allow tool to write SElinux policies.The log messages in /var/log/audit/audit.log are audit2allow friendly.</p>
+
+<p>More details on how to use audit2allow can be found on <a href="http://wiki.centos.org/HowTos/SELinux">http://wiki.centos.org/HowTos/SELinux</a></p>
+
+<p>Thats all for today.Have a nice time with SELinux !!!</p>
+
