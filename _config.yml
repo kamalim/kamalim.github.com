@@ -6,7 +6,6 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
 safe: true
-source: .
 destination: ./_site
 lsi: false
 markdown: kramdown
