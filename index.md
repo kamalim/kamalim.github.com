@@ -38,13 +38,13 @@ group: navigation
 
 <ul>
   <li>
-    <a href="http://www.slideshare.net/kamalikamj/automating-dev-environment-introduction-to</a>
+    <a href="http://www.slideshare.net/kamalikamj/automating-dev-environment-introduction-to">Automating Dev Environment - Introduction to Docker and Chef</a>
   </li>
   </ul>
 
 <ul>
   <li>
-    <a href="http://www.slideshare.net/kamalikamj/testing-for-infra-code-using-testkitchendockerchef</a>
+    <a href="http://www.slideshare.net/kamalikamj/testing-for-infra-code-using-testkitchendockerchef">Testing for infra code using test-kitchen,docker,chef</a>
   </li>
   </ul>
 
