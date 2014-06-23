@@ -69,23 +69,25 @@ This blogpost will include the steps that I used to create a ubuntu and a window
 
     config.vm.define :win1 do |win1_config|
         win1_config.vm.guest = :windows
-        win1_config.vm.box = "windows-7"  
+        win1_config.vm.box = "windows-7"
+        win1_config.windows.halt_timeout = 15
+        win1_config.winrm.max_tries = 20
         win1_config.vm.forward_port 3389, 3390, :name => "rdp", :auto => true
         win1_config.vm.forward_port 5985, 5985, :name => "winrm", :auto => true
 
     $vagrant up
 
     ##For latest version of Vagrant(1.5 and latter) Please find the below configuration for winrm:
-    config.vm.define :wintest do |wintest_config|
+    config.vm.define :win1 do |win1_config|
 
-            wintest_config.vm.box = "win7_enVL"
-            wintest_config.vm.guest = :windows
-            wintest_config.windows.halt_timeout = 15
-            wintest_config.winrm.max_tries = 20
-            wintest_config.vm.communicator = "winrm"
-            wintest_config.vm.network :forwarded_port, guest: 3389, host: 3389
-            wintest_config.vm.network :forwarded_port, guest: 5985, host: 5985
-             
+            win1_config.vm.box = "win7_enVL"
+            win1_config.vm.guest = :windows
+            win1_config.windows.halt_timeout = 15
+            win1_config.winrm.max_tries = 20
+            win1_config.vm.communicator = "winrm"
+            win1_config.vm.network :forwarded_port, guest: 3389, host: 3389
+            win1_config.vm.network :forwarded_port, guest: 5985, host: 5985
+
 
 So your windows vm is now ready.Lets move on to Linux Base box creation
 
