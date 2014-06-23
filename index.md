@@ -28,6 +28,12 @@ group: navigation
 
 <ul>
   <li>
+    <a href="http://www.slideshare.net/kamalikamj/testing-for-infra-code-using-testkitchendockerchef">TDD for infra code using test-kitchen,docker,chef</a>
+  </li>
+  </ul>
+
+<ul>
+  <li>
     <a href="http://www.slideshare.net/kamalikamj/automating-dev-environment-introduction-to">Automating Dev Environment - Introduction to Docker and Chef</a>
   </li>
   </ul>
@@ -35,18 +41,6 @@ group: navigation
 <ul>
   <li>
     <a href="http://www.slideshare.net/kamalikamj/identity-management-15171366">Identity Management in 802.1x networks</a>
-  </li>
-  </ul>
-
-<ul>
-  <li>
-    <a href="http://www.slideshare.net/kamalikamj/automating-dev-environment-introduction-to">Automating Dev Environment - Introduction to Docker and Chef</a>
-  </li>
-  </ul>
-
-<ul>
-  <li>
-    <a href="http://www.slideshare.net/kamalikamj/testing-for-infra-code-using-testkitchendockerchef">Testing for infra code using test-kitchen,docker,chef</a>
   </li>
   </ul>
 
