@@ -19,7 +19,7 @@ group: navigation
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
-  {% end for %}
+  {% endfor %}
 </ul>
 
 ### My Presentations
