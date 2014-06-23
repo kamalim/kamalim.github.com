@@ -42,6 +42,12 @@ group: navigation
   </li>
   </ul>
 
+<ul>
+  <li>
+    <a href="http://www.slideshare.net/kamalikamj/testing-for-infra-code-using-testkitchendockerchef</a>
+  </li>
+  </ul>
+
 
 ### Contact Me 
   
