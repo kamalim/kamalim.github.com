@@ -13,6 +13,7 @@ group: navigation
   I am currently interested in Infrastructure and Application Security, IaaS, PaaS and Continuous delivery.
 
 ### My Blogs
+------------
 
   <ul>
     {% for post in site.posts %}
@@ -23,6 +24,7 @@ group: navigation
   </ul>
 
 ### My Presentations
+--------------------
 
 <ul>
   <li>
@@ -49,7 +51,8 @@ group: navigation
   </ul>
 
 
-### Contact Me 
+### Contact Me
+--------------
   
   **email:** kamalika.mj at gmail
 
