@@ -2,4 +2,4 @@
 layout: default
 ---
 {% include JB/setup %}
-{% include themes/the-program/README.md %}
+{% include themes/jekyll-incorporated-master/README.md %}
