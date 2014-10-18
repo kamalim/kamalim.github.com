@@ -10,9 +10,7 @@ tags: []
   We all know how important it is to have automated environment in your project. 
   In our regular work we speak about automated build and deployment in enterprises, very less is spoken about or given important to the initial setup which is - ***Provisioning the virtual environments*** 
 
-  Automated provisioning of environment on demand is equally important as is automated build and deployment. It is the entire workflow - 
-
-    Automated Environment on Demand => Config Management => Automated Build and Deployment (Continuous Integration)
+  Automated provisioning of environment on demand is equally important as is automated build and deployment. It is the entire workflow - ***Automated Environment on Demand => Config Management => Automated Build and Deployment (Continuous Integration)***
 
   As part of an in house initiative, we started building a POC of Environment on Demand using Openstack .The technical stack we used are :
 
