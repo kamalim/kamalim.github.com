@@ -42,6 +42,7 @@ tags: []
   For compute , we used Openstack Nova to setup instances on multiple hypervisors. Our list of hypervisors included:
 
   ***1.KVM***
+  
   ***2.Vmware***
 
   For networking, we used Openstack Neutron as the network engine that manages the network creation in openstack with the help of various supported plugins. In this particular demo we used Neutron-Open-Vswitch-Plugin for creating a flat dhcp network. 
