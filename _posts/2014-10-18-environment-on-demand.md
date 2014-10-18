@@ -24,16 +24,18 @@ Which consists of :
 
 Using the above infrastructure we had setup an openstack-automated environment with VMware and KVM as the hypervisors. Below diagram is an overview of the setup.
 
----------------------------------
-![screenshot1](/images/Slide1.jpg)
----------------------------------
 
-Some Openstack details:
+![screenshot1](/images/Slide1.jpg)
+
+
+###Some Openstack details:
+--------------------------
 
 We used Redhat openstack (RDO) for the openstack setup. The reason behind using RDO is that it serves our purpose of supporting most enterprises and found to be stable and easier to configure.
 For compute , we used Openstack nova to setup instances on multiple hypervisors. Our list of hypervisors include:
-1.KVM
-2.Vmware
+
+**1.KVM
+**2.Vmware
 
 For networking, we used Openstack Neutron as the network engine that manages the network creation in openstack with the help of various supported plugins. In this particular demo we used Neutron-Open-Vswitch-Plugin for creating a flat dhcp network. 
 We will be working further on using other plugins that supports physical switch(Cisco/Juniper/Extreme) for managing VLANs and GRE tunnels.
