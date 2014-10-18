@@ -43,11 +43,11 @@ tags: []
 
     This video will give a quick walk-through of the above setup in details. 
 
-      <ul>
-        <li>
-           <iframe width="420" height="315" src="//www.youtube.com/embed/TlHS8e44BEo" frameborder="0" allowfullscreen></iframe>>
-       </li>
-      </ul>
+<ul>
+<li>
+<iframe width="420" height="315" src="//www.youtube.com/embed/TlHS8e44BEo" frameborder="0" allowfullscreen></iframe>>
+</li>
+</ul>
 
 
 The configurations are currently checked in to Github. The is a lot refactoring that has to go in it, but we are just starting :)
