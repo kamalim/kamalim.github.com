@@ -11,7 +11,7 @@ tags: []
 
   As part of an in house initiative, we started building a POC of Environment on Demand using Openstack .The technical stack we used are :
 
-  #Hardware:
+  **Hardware:**
 
   5 machines - each with 8 GB ram and 250 GB disk space
 
@@ -28,13 +28,13 @@ tags: []
   ![screenshot1](/images/Slide1.jpg)
 
 
-#Some Openstack details:
---------------------------
+####*ome Openstack details:*####
+--------------------------------
   We used Redhat openstack (RDO) for the openstack setup. The reason behind using RDO is that it serves our purpose of supporting most enterprises and found to be stable and easier to configure.
   For compute , we used Openstack nova to setup instances on multiple hypervisors. Our list of hypervisors include:
 
-  **1.KVM
-  **2.Vmware
+  1.KVM
+  2.Vmware
 
   For networking, we used Openstack Neutron as the network engine that manages the network creation in openstack with the help of various supported plugins. In this particular demo we used Neutron-Open-Vswitch-Plugin for creating a flat dhcp network. 
   We will be working further on using other plugins that supports physical switch(Cisco/Juniper/Extreme) for managing VLANs and GRE tunnels.
