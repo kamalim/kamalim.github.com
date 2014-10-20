@@ -39,16 +39,16 @@ tags: []
 --------------------------------
   We used Redhat openstack (RDO) for the openstack setup. The reason behind using RDO is that it serves our purpose of supporting most enterprises and found to be stable and easier to configure.
   
-  ####*For compute:*#### we used Openstack Nova to setup instances on multiple hypervisors. Our list of hypervisors included:
+  **For compute:** we used Openstack Nova to setup instances on multiple hypervisors. Our list of hypervisors included:
 
   ***1.KVM***
   
   ***2.Vmware***
 
-  ####*For networking:*#### we used Openstack Neutron as the network engine that manages the network creation in openstack with the help of various supported plugins. In this particular demo we used Neutron-Open-Vswitch-Plugin for creating a flat dhcp network. 
+  **For networking:** we used Openstack Neutron as the network engine that manages the network creation in openstack with the help of various supported plugins. In this particular demo we used Neutron-Open-Vswitch-Plugin for creating a flat dhcp network. 
   We will be working further on using other plugins that supports physical switch(Cisco/Juniper/Extreme) for managing VLANs and GRE tunnels.
 
-  ####*For Imaging:*#### we used Openstack Glance as the image service for building images for kvm (qcow) and VMware (vmdk). Currently it supports Centos and Ubuntu images for both kvm and VMware.
+  **For Imaging:** we used Openstack Glance as the image service for building images for kvm (qcow) and VMware (vmdk). Currently it supports Centos and Ubuntu images for both kvm and VMware.
 
   This video will give a quick walk-through of the above setup in details. 
 
